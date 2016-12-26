@@ -12,7 +12,7 @@ $(document).ready(function(){
       h2Element.html(" ");
       h2Element.removeClass("animated fadeIn")
       $.ajax({
-      url:"http://api.icndb.com/jokes/random?firstName="+name+"&lastName="+lastName+"&limitTo=[nerdy]",
+      url:"https://api.icndb.com/jokes/random?firstName="+name+"&lastName="+lastName+"&limitTo=[nerdy]",
       success: function(result){
         h2Element.addClass("animated fadeIn text-xs-center");
         h2Element.html(result.value.joke)
